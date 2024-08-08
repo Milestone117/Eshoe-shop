@@ -10,7 +10,7 @@
 :root {
     --btn-bg-color: #1f242d;
   --second-btn-bg-color: #323946;
-  --cyan-color: #f300f3;
+  --cyan-color: #2558ff;
 }
 
 body {
@@ -53,7 +53,7 @@ body {
     background: transparent;
     border: none;
     outline: none;
-    border: 2px solid rgba(255, 24, 236, 0.979);
+    border: 2px solid var(--cyan-color);
     border-radius: 40px;
     font-size: 17px;
     padding: 20px 45px 20px 20px;
@@ -75,7 +75,7 @@ body {
 .remember-forget {
     display: flex;
     justify-content: space-between;
-    font-size: 14px;
+    font-size: 17px;
     margin: -15px 0 15px;
 }
 
@@ -113,12 +113,14 @@ body {
 .register-link p {
     font-size: 14px;
     color: rgba(48, 1, 66, 0.979);
+    font-size: 16px;
 }
 
 .register-link a {
     display: flex;
     justify-content: center;
     color: #00ad0e;
+    font-size: 17px;
 }
 
 .register-link p a:hover {
