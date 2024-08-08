@@ -99,12 +99,9 @@ body {
     border: none;
     outline: none;
     border-radius: 40px;
-    box-shadow: 0 0 90px var(--cyan-color);
-    color: var(--second-btn-bg-color);
     font-size: 15px;
     font-weight: 600;
     justify-content: center;
-    transition: 0.5s all ease;
 }
 
 
