@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "gill sans-serif", 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; 
+}
+
+:root {
+    --dark-color-lighten: #f2f5ff;
+    --red-card: #a62121;
+    --blue-card: #4bb7e6;
+    --btn: #141414;
+    --btn-hover: #3a3a3a;
+    --text: #fbf7f7;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 100vh;
+    width: 100vw;
+    background: url('./assets/jord7.jpg') var(--dark-color-lighten) center no-repeat;
+    font-family: "Montserrat", sans-serif;
+}
+
+a,button {
+    cursor: pointer;
+}
+
+nav {
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    width: 100px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.navigation {
+    position: fixed;
+    left: -400px;
+    width: 200px;
+    height: 100vh;
+    background-color: black;
+    border-radius: 0 30px 30px 0;
+    transition: 2s;
+}
+
+.navigation ul li {
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    list-style-type: none;
+    font-size: 15px;
+    font-weight: 600;
+    padding: 10px 0;
+    border-bottom: 1pt solid #252525;
+    border-top: 1pt solid #252525;
+}
+
+.hamburger, .bar {
+    position: fixed;
+}
+
+.hamburger {
+    display: block; 
+    top: 3%;
+    left: 88%;
+    width: 30px;
+    height: 25px;
+    transform: translateY(-50%);
+    border: 0;
+    background: 0 0;
+} 
+
+.bar {
+    top: 3px;
+    background: #000;
+    width: 100%;
+    height: 4px;
+    transition: all .3s ease-in;
+}
+
+#bar2 {
+    top: 11px;
+}
+
+#bar3 {
+    top: 19px;
+}
+
+.navigation.active {
+    left: 0;
+}
+
+.hamburger.open #bar1 {
+    background-color: #000;
+    transform: rotate(45deg) translate(6px, 5px);
+}
+
+.hamburger.open #bar2 {
+    background-color: transparent;
+}
+
+.hamburger.open #bar3 {
+    background-color: #000;
+    transform: rotate(-45deg) translate(6px, -5px);
+}

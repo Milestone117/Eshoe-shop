@@ -3,14 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="home.css">
+    <title>Home</title>
 </head>
 <body>
-    <header class="header" id="header">
-        <div class="navbar">
-            
+    <div class="navigation">
+        <button class="hamburger" onclick="show()">
+            <div id="bar1" class="bar"></div>
+            <div id="bar2" class="bar"></div>
+            <div id="bar3" class="bar"></div>
+        </button>
 
-        </div>
-    </header>
+        <nav>
+            <ul>
+                <li><a href="#">home</a></li>
+                <li><a href="#">my favorite</a></li>
+                <li><a href="#">cart</a></li>
+                <li><a href="#">my profile</a></li>
+                <li><a href="#">settings</a></li>
+                <li><a href="#">logout</a></li>
+            </ul>
+        </nav>
+    </div>
+    <script src="scripts.js"></script>
 </body>
 </html>
